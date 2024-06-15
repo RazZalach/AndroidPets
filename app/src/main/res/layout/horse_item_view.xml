@@ -1,0 +1,43 @@
+<!-- horse_item_view.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewHorseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Horse Name" />
+
+    <TextView
+        android:id="@+id/textViewRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Race" />
+
+    <TextView
+        android:id="@+id/textViewHorseAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Age: " />
+
+    <TextView
+        android:id="@+id/textViewIsHungry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Hungry: " />
+    <Button
+        android:id="@+id/feed_horse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed Horse"
+        />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddDiatyPage">
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Body Input -->
+    <EditText
+        android:id="@+id/etBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body"
+        android:inputType="textMultiLine"
+        android:minHeight="150dp"
+        android:gravity="top"
+        android:layout_below="@id/etName"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Date Created Input -->
+    <EditText
+        android:id="@+id/etDateCreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Created (yyyy-MM-dd HH:mm:ss)"
+        android:inputType="datetime"
+        android:layout_below="@id/etBody"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <TextView
+        android:id="@+id/drawable_ids_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDateCreated"
+        android:text="Drawable Resource IDs will be shown here"
+        android:textSize="16sp"/>
+    <!-- Picture ID Input -->
+    <EditText
+        android:id="@+id/etPicId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Picture ID"
+        android:inputType="number"
+        android:layout_below="@id/drawable_ids_textview"
+        android:layout_marginBottom="16dp" />
+
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/etPicId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
